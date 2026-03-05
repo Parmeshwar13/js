@@ -22,7 +22,7 @@ console.log(num2.toFixed(2)); // 123.46
 console.log(num2.toFixed(4)); // 123.4567
 
 //toLocaleString
-// tolocaleStirng is a method to format number  date ,currency accordint to loacale region
+// tolocaleStirng is a method to format number  date ,currency according to locale region
 const num3=1234567.89;
 console.log(num3.toLocaleString('en-US'));
 console.log(num3.toLocaleString('hi-IN'));
