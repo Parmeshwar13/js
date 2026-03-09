@@ -1,0 +1,5 @@
+1 what is autoboxing?
+JavaScript automatically converts a primitive value into its corresponding object wrapper 
+so that methods and properties can be accessed.
+
+2
