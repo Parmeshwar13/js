@@ -2,4 +2,49 @@
 JavaScript automatically converts a primitive value into its corresponding object wrapper 
 so that methods and properties can be accessed.
 
-2
+2 what is scope ?
+ scope is region of code where variable can be accessed.
+ there are three types of scope:
+    a.global scope
+    b.function scope
+    c. block scope
+    Global-Scope:
+           global scope defined outside the function or block
+           it can be accessed anywhere inside progrram
+    Function-Scope/Local-Scope:
+      A local variable is declared inside a function or block.
+      It can be accessed only inside that function or block where it is declared.
+
+3. what is closure?
+  A closure is a function which remember the variable from the scope in which it was created
+  even if scope has finish executing
+  OR A closure is a function that keep accessing variable from it parent scope even after the parent scope finished.
+  function fun (){
+    count=0
+    function counter(){
+        count++
+        console.log(count)
+    }
+    return counter
+  }
+
+  console.log(fun())//1
+
+4. what is hoisting?
+  hoisting  is js behaviour where variable and function declaration moved to the top of the scope during compilation phase 
+  before  the code excutaion
+  eg;
+    console.log(a)
+    var a=10
+    it become ,
+        var=a;
+        console.log(a)
+        a=10
+        return undefined
+    Function: 
+        greet();
+
+        function greet() {
+        console.log("Hello");
+        }
+        //OUTPUT:Hello
