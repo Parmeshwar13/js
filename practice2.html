@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color:black; color:azure" >
+    <div class="parent">
+        <div class="day">Monday</div>
+        <div class="day">Tuesday</div>
+        <div class="day">Wednesday</div>
+        <div class="day">Thursday</div>
+    </div>
+    <script>
+        const A=document.querySelector('.parent')
+        console.log(A.childNodes)
+        const child=A.children
+        console.log(child.length)
+        for (let i=0; i<child.length; i++){
+            child[i].style.color='red'
+            console.log(child[i].innerText)
+        }
+
+    </script>
+</body >
+</html>
